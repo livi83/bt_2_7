@@ -6,18 +6,17 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class CategorySeeder extends Seeder
+class TagSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        //
-        DB::table('categories')->insert([
-            ['name' => 'Technológie'],
-            ['name' => 'Veda'],
-            ['name' => 'Umelá inteligencia']
+        DB::table('tags')->insert([
+            ['name' => 'tech'],
+            ['name' => 'e-commerce'],
+            ['name' => 'software'],
         ]);
     }
 }
