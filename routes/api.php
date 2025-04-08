@@ -9,6 +9,3 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 Route::resource('admin/posts', PostController::class);
-Route::get('admin/posts-with-users', [PostController::class, 'postsWithUsers']);
-Route::get('admin/usersWithPostsCount', [PostController::class, 'usersWithPostsCount']);
-Route::get('admin/searchPosts', [PostController::class, 'searchPosts']);
